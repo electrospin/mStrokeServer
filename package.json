@@ -22,8 +22,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/deezbeans/sails-auth-example.git"
+    "url": "git://github.com/electrospin/mStrokeServer.git"
   },
-  "author": "Hector",
+  "author": "timi",
   "license": ""
 }
