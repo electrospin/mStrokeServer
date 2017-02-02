@@ -5,10 +5,15 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bluebird": "^3.4.7",
     "include-all": "~0.1.6",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.4",
     "rc": "1.0.1",
     "sails": "~0.12.4",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mongo": "^0.12.2"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -17,8 +22,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/timi/auth-example.git"
+    "url": "git://github.com/deezbeans/sails-auth-example.git"
   },
-  "author": "timi",
+  "author": "Hector",
   "license": ""
 }

@@ -1,5 +1,5 @@
 module.exports.blueprints = {
-  rest: false,
-  actions: false,
-  shortcuts: false
+  rest: true,
+  actions: true,
+  shortcuts: true
 };
