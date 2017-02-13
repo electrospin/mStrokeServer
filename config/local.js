@@ -44,12 +44,12 @@ module.exports = {
   //   cert: require('fs').readFileSync(__dirname + './ssl/my_apps_ssl.crt')
   // },
    ssl: {
-     key: require('fs').readFileSync(__dirname + '/ssl/privateKey.key'),
-     cert: require('fs').readFileSync(__dirname + '/ssl/MScertificate.pem')
+     key: require('fs').readFileSync(__dirname + '/ssl/private.key'),
+     cert: require('fs').readFileSync(__dirname + '/ssl/myCert.pem')
    },
-    port: 8181,
+    port: 443,
     policies: {
-        '*': 'isHTTP'
+        '*': 'isHTTPS'
     }
 //  ssl: {
 //        key: require('fs').readFileSync(__dirname + '/ssl/privKey.key'),
@@ -78,7 +78,7 @@ module.exports = {
    ***************************************************************************/
 
   // port: process.env.PORT || 1337,
-   // port: process.env.PORT || 443,
+//   port: process.env.PORT || 443//,
    
   /***************************************************************************
    * The runtime "environment" of your Sails app is either typically         *

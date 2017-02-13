@@ -11,13 +11,17 @@ module.exports = function(req, res, next) {
 
   // User is allowed, proceed to the next policy, 
   // or if this is the last policy, the controller
-  if (req.session.sessionAuth) {
+//  if (req.session.sessionAuth) {
+    if(req.secure){
+	console.log("auth successfully-policies/isHTTPS.js");
     return next();
     // else return res.send(403);
   }else {
-	   res.redirect('https://' + req.headers.host + req.url);
+	console.log("NOT authenticated-policices/isHTTPS.js");   
+	res.redirect('https://' + req.headers.host + req.url);
+	   
 	}
-
+	
   // User is not allowed
   // (default res.forbidden() behavior can be overridden in `config/403.js`)
   //return res.forbidden('You are not permitted to perform this action.');
